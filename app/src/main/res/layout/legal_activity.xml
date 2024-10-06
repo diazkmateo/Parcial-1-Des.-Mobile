@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/legalActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LegalActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Información legal:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingHorizontal="15dp"
+        android:layout_height="wrap_content"
+        android:text="  Programa Loco no es una compañía que hace préstamos, emite tarjetas o inversiones por usted, ni toma decisiones al respecto. Esta app no constituye una oferta o solicitud de un producto financiero. Ofrecemos un servicio que ayuda personas que necesitan de información a la hora de invertir. El operador de esta app no es un prestamista, agente, representante o corredor de financiera alguna, y no cobra a sus usuarios por ningún producto o servicio."
+        android:textColor="#5F5F5F"
+        android:textSize="19sp"/>
+
+    <Button
+        android:id="@+id/btVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOLVER">
+    </Button>
+
+</LinearLayout>

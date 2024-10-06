@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/testActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:gravity="top">
+
+        <!-- Datos del Usuario -->
+        <LinearLayout
+            android:id="@+id/ingresarDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Incluya su información personal:"
+                android:layout_margin="3dp" />
+
+            <EditText
+                android:id="@+id/ingresarNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre" />
+
+            <EditText
+                android:id="@+id/ingresarApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido" />
+
+            <EditText
+                android:id="@+id/ingresarEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email" />
+        </LinearLayout>
+
+        <!-- Preguntas del Test -->
+        <LinearLayout
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ingresarDatos"
+            android:orientation="vertical">
+
+            <!-- Pregunta 1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. ¿Qué experiencia tenés como inversionista?"
+                android:textSize="25sp" />
+
+            <RadioGroup
+                android:id="@+id/pregunta1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ninguna" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poca" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mucha" />
+            </RadioGroup>
+
+            <!-- Pregunta 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. ¿Qué porcentaje de tus ahorros estás dispuesto a destinar a las inversiones en el Mercado de Capitales?"
+                android:textSize="25sp" />
+
+            <RadioGroup
+                android:id="@+id/pregunta2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menos del 25%" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entre el 25% y el 65%" />
+
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Más del 65%" />
+            </RadioGroup>
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. En el momento de realizar una inversión, ¿cuál de las siguientes opciones preferís?"
+                android:textSize="25sp" />
+
+            <RadioGroup
+                android:id="@+id/pregunta3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preservar el dinero con una rentabilidad mínima" />
+
+                <RadioButton
+                    android:id="@+id/radioButton8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tener una ganancia superior a un plazo fijo" />
+
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obtener una ganancia significativa, con riesgo" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/btTestVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VOLVER"
+                android:gravity="center_horizontal"
+                android:layout_marginHorizontal="5dp" />
+
+            <Button
+                android:id="@+id/btTestEvaluar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EVALUAR"
+                android:gravity="center_horizontal"
+                android:layout_marginHorizontal="5dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+

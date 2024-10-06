@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">1erTPIntegrador</string>
+    <string name="text_propuestaI">Propuesta de Inversión I</string>
+    <string name="text_propuestaII">Propuesta de Inversión II</string>
+    <string name="text_resultado">VER RESULTADOS</string>
+    <string name="text_volverI">VOLVER</string>
+    <string name="text_volver">VOLVER</string>
+    <string name="hint_montoAInvertir">Ingrese el monto a invertir</string>
+    <string name="hint_tasaInteres">Ingrese la tasa de interes propuesta</string>
+    <string name="hint_tiempoDias">Ingrese el plazo de inversión en días</string>
+    <string name="text_resultados_de_la_inversión">Resultados de la inversión</string>
+    <string name="text_monto_total_de_la_propuestaI">Monto total Propuesta I: </string>
+    <string name="text_monto_total_de_la_propuestaII">Monto total Propuesta II: </string>
+    <string name="texto_monto_total_propuestaI">Monto total Propuesta I: %1$.2f</string>
+    <string name="texto_monto_total_propuestaII">Monto total Propuesta II: %1$.2f</string>
+
+
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/investActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalcularActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvPropuestaI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_propuestaI"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:id="@+id/etmontoInvertirI"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="@string/hint_montoAInvertir"
+        android:autofillHints="inversión"
+        android:inputType="numberDecimal">
+    </EditText>
+
+    <EditText
+        android:id="@+id/ettasaInteresI"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="@string/hint_tasaInteres"
+        android:autofillHints="decimal"
+        android:inputType="numberDecimal">
+    </EditText>
+
+    <EditText
+        android:id="@+id/ettiempoDiasI"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="@string/hint_tiempoDias"
+        android:autofillHints="dias"
+        android:inputType="number">
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvpropuestaII"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_propuestaII"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:id="@+id/etmontoInvertirII"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="@string/hint_montoAInvertir"
+        android:autofillHints="inversión"
+        android:inputType="numberDecimal">
+    </EditText>
+
+    <EditText
+        android:id="@+id/ettasaInteresII"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="@string/hint_tasaInteres"
+        android:autofillHints="decimal"
+        android:inputType="numberDecimal">
+    </EditText>
+
+    <EditText
+        android:id="@+id/ettiempoDiasII"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="@string/hint_tiempoDias"
+        android:autofillHints="dias"
+        android:inputType="number">
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonVerResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_resultado">
+    </Button>
+    <Button
+        android:id="@+id/buttonVolverI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_volverI">
+    </Button>
+
+</LinearLayout>
