@@ -1,11 +1,11 @@
 # Desarrollo de Aplicaciones Móviles.
 
-# Grupo: 
-Díaz Mateo
-Martín Diego
-Nieves Abrahams
-Spindler Daniel
-Vera José 
+## Grupo: 
+### Díaz Mateo
+### Martín Diego
+### Nieves Abrahams
+### Spindler Daniel
+### Vera José 
 
 
 ## TPNro.1 Parcial Nro. 1 Documentación APP “Financiera”:
