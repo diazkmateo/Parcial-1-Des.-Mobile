@@ -31,7 +31,7 @@ class HistorialActivity: AppCompatActivity() {
         val historial5 = findViewById<TextView>(R.id.tvHistorial5)
 
         val datosAlmacenados = getSharedPreferences("loginPref", Context.MODE_PRIVATE)
-        val ultimaActividad = datosAlmacenados.getString("ultimaActividad", null)
+        //val ultimaActividad = datosAlmacenados.getString("ultimaActividad", null)
 
         historial1.text = datosAlmacenados.getString("historial1", null)
         historial2.text = datosAlmacenados.getString("historial2", null)
@@ -39,6 +39,7 @@ class HistorialActivity: AppCompatActivity() {
         historial4.text = datosAlmacenados.getString("historial4", null)
         historial5.text = datosAlmacenados.getString("historial5", null)
 
+        /*
         if(ultimaActividad != historial1.text)
         {
             historial5.text = historial4.text
@@ -56,7 +57,7 @@ class HistorialActivity: AppCompatActivity() {
             putString("historial5", historial5.text.toString())
             apply()
         }
-
+        */
 
         val buttonVolver = findViewById<Button>(R.id.btHistorialVolver)
         buttonVolver.setOnClickListener{

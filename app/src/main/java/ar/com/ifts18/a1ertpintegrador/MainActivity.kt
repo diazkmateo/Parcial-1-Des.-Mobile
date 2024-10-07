@@ -18,11 +18,6 @@ class MainActivity : AppCompatActivity() {
         val botonHistorial = findViewById<Button>(R.id.btHistorial)
         val botonLegal = findViewById<Button>(R.id.btLegal)
 
-        // SHARED PREFERENCES
-        // Al terminar el test, los datos insertados por el usuario se guardan
-        // pero no se actualizan en el main, si no que el main mantiene los datos
-        // del inicio de la app y el usuario debe reiniciar el programa si quiere
-        // usar la app con los datos que ingresó.
         val datosAlmacenados = getSharedPreferences("loginPref", Context.MODE_PRIVATE)
         val usuarioTesteado = datosAlmacenados.getBoolean("hizoTest", false)
 
@@ -73,6 +68,7 @@ class MainActivity : AppCompatActivity() {
         botonLegal.setOnClickListener{
             val intent = Intent(this, LegalActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
     }

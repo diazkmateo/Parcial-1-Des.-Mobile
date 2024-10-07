@@ -48,8 +48,16 @@ class ResultsActivity:AppCompatActivity() {
 
             val datosAlmacenados = getSharedPreferences("loginPref", Context.MODE_PRIVATE)
             datosAlmacenados.edit().apply {
-                putString("ultimaActividad", resultado+": %.2f".format(montoTotalI)+" vs %.2f".format(montoTotalII))
-                commit()
+                putString("ultimaActividad", resultado + ": %.2f".format(montoTotalI) + " vs %.2f".format(montoTotalII))
+                apply()
+            }
+            datosAlmacenados.edit().apply {
+                putString("historial5", datosAlmacenados.getString("historial4", null))
+                putString("historial4", datosAlmacenados.getString("historial3", null))
+                putString("historial3", datosAlmacenados.getString("historial2", null))
+                putString("historial2", datosAlmacenados.getString("historial1", null))
+                putString("historial1", datosAlmacenados.getString("ultimaActividad", null))
+                apply()
             }
         }
 
