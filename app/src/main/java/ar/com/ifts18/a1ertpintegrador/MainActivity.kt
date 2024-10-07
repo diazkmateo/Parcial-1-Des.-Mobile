@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         botonTest.setOnClickListener{
             val intent = Intent(this, TestActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         botonCalcular.setOnClickListener{
@@ -68,7 +69,6 @@ class MainActivity : AppCompatActivity() {
         botonLegal.setOnClickListener{
             val intent = Intent(this, LegalActivity::class.java)
             startActivity(intent)
-            finish()
         }
 
     }
