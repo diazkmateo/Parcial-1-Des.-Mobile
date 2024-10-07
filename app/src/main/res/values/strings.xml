@@ -13,7 +13,7 @@
     <string name="text_monto_total_de_la_propuestaII">Monto total Propuesta II: </string>
     <string name="texto_monto_total_propuestaI">Monto total Propuesta I: %1$.2f</string>
     <string name="texto_monto_total_propuestaII">Monto total Propuesta II: %1$.2f</string>
-
+    <string name="texto_resultado">Resultado: %1$s</string>
 
 
 </resources>

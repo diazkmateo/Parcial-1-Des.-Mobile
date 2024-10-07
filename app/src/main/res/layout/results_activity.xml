@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_resultados"
+    android:id="@+id/results_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ResultsActivity"
@@ -14,9 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/text_resultados_de_la_inversión"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="20dp"/>
 
     <TextView
         android:id="@+id/textViewPropuestaI"
@@ -25,7 +25,7 @@
         android:layout_margin="20sp"
         android:textSize="18sp"
         android:text="@string/text_monto_total_de_la_propuestaI"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="16dp"/>
 
     <TextView
         android:id="@+id/textViewPropuestaII"
@@ -35,6 +35,15 @@
         android:textSize="18sp"
         android:text="@string/text_monto_total_de_la_propuestaII"
         android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MEJOR INVERSION"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="20dp"/>
 
     <Button
         android:id="@+id/buttonVolver"
