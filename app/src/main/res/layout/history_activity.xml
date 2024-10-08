@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".HistorialActivity">
+    tools:context=".HistorialActivity"
+    android:background="@color/lightGreen">
 
     <TextView
         android:id="@+id/titulo"
@@ -25,7 +26,7 @@
         android:layout_below="@id/titulo"
         android:orientation="vertical"
         android:layout_margin="10dp"
-        android:background="#4D616161">
+        android:background="#4D287553">
         <TextView
             android:id="@+id/tvHistorial1"
             android:layout_width="match_parent"
@@ -74,7 +75,8 @@
         android:layout_height="wrap_content"
         android:text="VOLVER"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/historial">
+        android:layout_below="@id/historial"
+        android:backgroundTint="@color/green">
     </Button>
 
 </RelativeLayout>

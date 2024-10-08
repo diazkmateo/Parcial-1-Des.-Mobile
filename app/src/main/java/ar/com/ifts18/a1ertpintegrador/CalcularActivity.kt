@@ -63,12 +63,12 @@ class CalcularActivity : AppCompatActivity() {
 
 
                 var intent = Intent(this, ResultsActivity::class.java)
-                if (rendimientoI > rendimientoII)
+                if (montoTotalAObtenerI > montoTotalAObtenerII)
                 {
                     val propI = "La propuesta de inversión más conveniente es la propuesta I"
                     intent.putExtra("propuesta", propI)
                 }
-                else if (rendimientoI < rendimientoII)
+                else if (montoTotalAObtenerI < montoTotalAObtenerII)
                 {
                     val propII = "La propuesta de inversión más conveniente es la propuesta II"
                     intent.putExtra("propuesta", propII)

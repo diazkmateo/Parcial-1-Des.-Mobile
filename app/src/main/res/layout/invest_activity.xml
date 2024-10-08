@@ -7,7 +7,8 @@
     tools:context=".CalcularActivity"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/lightGreen">
 
     <TextView
         android:id="@+id/tvPropuestaI"
@@ -87,14 +88,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/text_resultado">
+        android:text="@string/text_resultado"
+        android:backgroundTint="@color/green">
     </Button>
     <Button
         android:id="@+id/buttonVolverI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/text_volverI">
+        android:text="@string/text_volverI"
+        android:backgroundTint="@color/green">
     </Button>
 
 </LinearLayout>

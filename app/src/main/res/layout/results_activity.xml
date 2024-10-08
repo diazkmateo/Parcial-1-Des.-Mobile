@@ -7,7 +7,8 @@
     tools:context=".ResultsActivity"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/lightGreen">
 
     <TextView
         android:id="@+id/textViewTitulo"
@@ -50,6 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/text_volver" />
+        android:text="@string/text_volver"
+        android:backgroundTint="@color/green"/>
 
 </LinearLayout>

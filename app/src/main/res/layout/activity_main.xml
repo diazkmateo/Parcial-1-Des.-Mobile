@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@color/lightGreen">
 
     <TextView
         android:id="@+id/textoBienvenida"
@@ -38,25 +39,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Test del inversor"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:backgroundTint="@color/green"/>
         <Button
             android:id="@+id/btCalcular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Calcular inversión"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:backgroundTint="@color/green"/>
         <Button
             android:id="@+id/btHistorial"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Historial"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:backgroundTint="@color/green"/>
         <Button
             android:id="@+id/btLegal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Aclaración legal"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:backgroundTint="@color/green"/>
     </LinearLayout>
 
     <LinearLayout

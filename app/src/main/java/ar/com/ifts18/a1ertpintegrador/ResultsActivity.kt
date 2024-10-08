@@ -52,11 +52,11 @@ class ResultsActivity:AppCompatActivity() {
                 apply()
             }
             datosAlmacenados.edit().apply {
-                putString("historial5", datosAlmacenados.getString("historial4", null))
-                putString("historial4", datosAlmacenados.getString("historial3", null))
-                putString("historial3", datosAlmacenados.getString("historial2", null))
-                putString("historial2", datosAlmacenados.getString("historial1", null))
-                putString("historial1", datosAlmacenados.getString("ultimaActividad", null))
+                putString("historial5", datosAlmacenados.getString("historial4", "-"))
+                putString("historial4", datosAlmacenados.getString("historial3", "-"))
+                putString("historial3", datosAlmacenados.getString("historial2", "-"))
+                putString("historial2", datosAlmacenados.getString("historial1", "-"))
+                putString("historial1", datosAlmacenados.getString("ultimaActividad", "-"))
                 apply()
             }
         }
